@@ -20,21 +20,14 @@
                     <div class="card-body p-4"> 
 
                         <div class="text-center mt-2">
-                            <h5 class="text-primary">Register Account</h5>
+                            <h5 class="text-primary">Login Your Account</h5>
                             <p class="text-muted">Get your free Minible account now.</p>
                         </div> 
                         <div class="p-2 mt-4">
-                            <form action="{{ route('store.register') }}" method="POST">
+                            <form action="{{ route('login') }}" method="POST">
                                 @csrf
                                
-        
-                                <div class="mb-3">
-                                    <label class="form-label" for="username">Name</label>
-                                    <input type="text" name="name" class="form-control" id="username" placeholder="Enter username">
-                                    @error('name')
-                                        <span class="text-danger">{{$message}}</span>
-                                    @enderror
-                                </div>
+
                                 <div class="mb-3">
                                     <label class="form-label" for="useremail">Email</label>
                                     <input type="email" name="email" class="form-control" id="useremail" placeholder="Enter email">
@@ -49,13 +42,6 @@
                                         <span class="text-danger">{{$message}}</span>
                                     @enderror        
                                 </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="password">Confirmation Password</label>
-                                    <input type="password" name="password_confirmation" class="form-control" id="rpassword" placeholder="Enter password">
-                                    @error('password_confirmation')
-                                        <span class="text-danger">{{$message}}</span>
-                                    @enderror        
-                                </div>
 
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="auth-terms-condition-check">
@@ -65,12 +51,12 @@
                             
                                 
                                 <div class="mt-3 text-end">
-                                    <button class="btn btn-primary w-sm waves-effect waves-light" type="submit">Register</button>
+                                    <button class="btn btn-primary w-sm waves-effect waves-light" type="submit">Login</button>
                                 </div>
     
                                 <div class="mt-4 text-center">
                                     <div class="signin-other-title">
-                                        <h5 class="font-size-14 mb-3 title">Sign up using</h5>
+                                        <h5 class="font-size-14 mb-3 title">Sign in using</h5>
                                     </div>
                                     
     
