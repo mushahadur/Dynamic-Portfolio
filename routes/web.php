@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Frontend\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,13 +15,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-        return view('welcome');
-    });
+
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/sign-up', [HomeController::class, 'getStartingByRegister'])->name('get.started.register');
+Route::get('/sign-in', [HomeController::class, 'getStartingByLogin'])->name('get.started.login');
 
 
 // Route::get('/', function () {
-//     return view('backend.pages.dashboard.index');
+//     return view('backend.pages.dashboard.index'); //get.started.login
 // });
 
 Route::get('/dashboard', function () {

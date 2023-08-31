@@ -1,7 +1,7 @@
 @extends('backend.auth.layout.app')
 
 @section('auth-contain')
-<div class="account-pages my-5 pt-sm-5">
+<div class="account-pages sm-5">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -19,7 +19,7 @@
                    
                     <div class="card-body p-4"> 
 
-                        <div class="text-center mt-2">
+                        <div class="text-center">
                             <h5 class="text-primary">Register Account</h5>
                             <p class="text-muted">Get your free Minible account now.</p>
                         </div> 
@@ -29,29 +29,36 @@
                                
         
                                 <div class="mb-3">
-                                    <label class="form-label" for="username">Name</label>
-                                    <input type="text" name="name" class="form-control" id="username" placeholder="Enter username">
+                                    <label class="form-label" >Name</label>
+                                    <input type="text" name="name" class="form-control" placeholder="Enter Name">
                                     @error('name')
                                         <span class="text-danger">{{$message}}</span>
                                     @enderror
                                 </div>
                                 <div class="mb-3">
+                                    <label class="form-label" >User Name</label>
+                                    <input type="text" name="username" class="form-control" placeholder="Enter UserName">
+                                    @error('username')
+                                        <span class="text-danger">{{$message}}</span>
+                                    @enderror
+                                </div>
+                                <div class="mb-3">
                                     <label class="form-label" for="useremail">Email</label>
-                                    <input type="email" name="email" class="form-control" id="useremail" placeholder="Enter email">
+                                    <input type="email" name="email" class="form-control" id="useremail" placeholder="Enter Email">
                                     @error('email')
                                         <span class="text-danger">{{$message}}</span>
                                     @enderror        
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label" for="password">Password</label>
-                                    <input type="password" name="password" class="form-control" id="rpassword" placeholder="Enter password">
+                                    <input type="password" name="password" class="form-control" id="rpassword" placeholder="Enter Password">
                                     @error('password')
                                         <span class="text-danger">{{$message}}</span>
                                     @enderror        
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label" for="password">Confirmation Password</label>
-                                    <input type="password" name="password_confirmation" class="form-control" id="rpassword" placeholder="Enter password">
+                                    <input type="password" name="password_confirmation" class="form-control" id="rpassword" placeholder="Enter Confirmation password">
                                     @error('password_confirmation')
                                         <span class="text-danger">{{$message}}</span>
                                     @enderror        
