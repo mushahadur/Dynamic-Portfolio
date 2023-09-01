@@ -12,7 +12,8 @@ class GuestLayout extends Component
      */
     public function render(): View
     {
-        return view('backend.auth.register.index');
+        // return view('backend.auth.register.index');
+        return view('backend.auth.register');
         // return view('layouts.guest');
     }
 }

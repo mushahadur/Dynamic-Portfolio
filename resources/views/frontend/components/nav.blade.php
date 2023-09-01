@@ -14,7 +14,7 @@
                 <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
                 <li class="nav-item"><a href="#blog-section" class="nav-link"><span>Blog</span></a></li>
                 <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-                <li class="nav-item"><a href="{{ route('get.started.register') }}" class="btn btn-primary btn-outline-primary nav-link"><span>Get Started</span></a></li>
+                <li class="nav-item"><a href="{{ route('register') }}" class="btn btn-primary btn-outline-primary nav-link"><span>Get Started</span></a></li>
             </ul>
         </div>
     </div>

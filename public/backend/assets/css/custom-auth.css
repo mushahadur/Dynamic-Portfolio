@@ -7,8 +7,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    margin-bottom: 15px;
 }
-
+.text-danger{
+    color: red;
+}
 body {
     background: #ecf0f3;
 }
